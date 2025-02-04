@@ -18,9 +18,11 @@ fullstack-learning/
 │   │   ├── index.html
 │   │   ├── styles.css
 │   │   ├── index.js
+│   │   ├── test/
 │── backend/
 │   ├── server.js
 │   ├── package.json
+│   ├── test/
 │── tests/
 │   ├── frontend/
 │   ├── backend/
@@ -33,7 +35,9 @@ fullstack-learning/
 
 - Criar estrutura HTML com formulário de cadastro de produto.
 - Estilizar utilizando CSS puro.
-- Responsividade com Flexbox/Grid.
+- Responsividade com Flexbox/Grid.(jogue o jogo https://flexboxfroggy.com/ para ter uma noção a mais de diplay flex )
+- jogue o jogo https://flexboxfroggy.com/ para ter uma noção a mais de diplay flex (opcional)
+- jogue o jogo https://cssgridgarden.com/ para ter uma noção a mais de diplay grid (opcional)
 
 ### **Módulo 2: JavaScript**
 
