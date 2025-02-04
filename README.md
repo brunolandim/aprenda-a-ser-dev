@@ -108,12 +108,13 @@ Caso queira contribuir, faça um **fork** do projeto e me ajude a melhorá-lo!
 
 1. Faça um fork do repositório clicando no botão **Fork** no GitHub.
 2. Clone o seu fork para a sua máquina local:
-   ```sh
-   git clone git@github.com:SEU-USUARIO/aprenda-a-ser-dev.git
-   git checkout -b minha-melhoria
-   git commit -m "Melhoria implementada"
-   git push origin minha-melhoria
-   ```
+
+```sh
+git clone git@github.com:SEU-USUARIO/aprenda-a-ser-dev.git
+git checkout -b minha-melhoria
+git commit -m "Melhoria implementada"
+git push origin minha-melhoria
+```
  
 
 
