@@ -13,6 +13,35 @@ async function chamarTestEndpoint() {
   }
 }
 
+// 🚀 Assim que o HTML carregar, a listagem de produtos será inserida diretamente na `<div id="produtos">`
+document.addEventListener("DOMContentLoaded", async () => {
+  try {
+    const response = await fetch("http://localhost:3000/produtos");
+    const data = await response.json();
+
+    if (data.status === "Sucesso") {
+      const produtosContainer = document.getElementById("produtos");
+      produtosContainer.innerHTML = ""; // Limpa a div antes de adicionar os produtos
+
+      data.data.forEach((produto, index) => {
+        const produtoElemento = document.createElement("div");
+        produtoElemento.classList.add("produto");
+        produtoElemento.innerHTML = `
+          <strong>${produto.nome}</strong>
+          <p>${produto.descricao}</p>
+          <button onclick="removerProduto(${index})">🗑 Remover</button>
+        `;
+        produtosContainer.appendChild(produtoElemento);
+      });
+    } else {
+      alert("❌ Erro ao carregar produtos!");
+    }
+  } catch (error) {
+    alert("❌ Erro ao conectar com o servidor!");
+    console.error(error);
+  }
+});
+
 // Função para adicionar um novo produto
 function adicionarProduto() {
 //sempre que criar um novo produto adicione o mesmo dentro da  <div id="produtos"></div>
@@ -24,5 +53,6 @@ function atualizarLista() {
 
 // Função para remover um produto pelo índice
 function removerProduto(index) {
-  //sempre que remover um novo produto remova também da  <div id="produtos"></div>
+  alert("🗑️ Opa! Parece que você quer remover um produto... Mas essa funcionalidade ainda precisa ser implementada! 🚀");
+  // Sempre que remover um novo produto, remova também da `<div id="produtos"></div>`
 }

@@ -1,6 +1,7 @@
 // Importando o módulo express (nosso herói para criar servidores web)
 import express from 'express';
 import cors from 'cors'
+import { products } from './dbfake.js';
 
 // Criando uma instância do express (tipo ligar o motor do carro)
 const app = express();
@@ -37,9 +38,17 @@ app.get('/teste', (req, res) => {
   res.json({
     mensagem: '✨ Olá, você encontrou a rota secreta do aprendizado! 🔥',
     status: 'Sucesso',
-    codigo: 200,
     desafio: 'Crie uma nova rota chamada /minha-rota e retorne algo divertido! 🤓'
-  });
+  }).status(200);
+});
+
+app.get('/produtos', (req, res) => {
+  res.json({
+    mensagem: '✨ Endpoint que lista os produtos! 🔥',
+    status: 'Sucesso',
+    codigo: 200,
+    data: products
+  }).status(200);
 });
 
 // Bora colocar esse servidor para rodar 🚗💨

@@ -14,6 +14,54 @@
   gap: 5px;
   flex-direction: column;
 }
-//implemente abaixo o estilo dos produtos adicionados
+
 #produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.produto {
+  width: 250px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.produto:hover {
+  transform: scale(1.05);
+}
+
+.produto strong {
+  font-size: 18px;
+  color: #333;
+}
+
+.produto p {
+  font-size: 14px;
+  color: #666;
+  margin: 10px 0;
+}
+
+.produto button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.produto button:hover {
+  background-color: darkred;
 }
