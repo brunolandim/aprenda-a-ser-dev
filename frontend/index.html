@@ -10,15 +10,20 @@
   <body>
     <h1>Criar Novo Produto</h1>
     <form id="form-produto">
-      <label for="nome">Nome do Produto:</label>
-      <input type="text" id="nome" name="nome" required />
+      <div class="container">
+        <label for="nome">Nome do Produto:</label>
+        <input type="text" id="nome" name="nome" required />
+      </div>
 
-      <label for="descricao">Descrição:</label>
-      <input type="text" id="descricao" name="descricao" required />
+      <div class="container">
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao" name="descricao" required />
+      </div>
 
       <button type="submit">Criar Produto</button>
     </form>
-
+    <hr />
+    <h2>Lista de Produtos</h2>
     <div id="produtos"></div>
     <!-- Link para o arquivo JavaScript -->
     <script src="script.js"></script>
