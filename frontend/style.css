@@ -1,0 +1,12 @@
+#form-produto {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+//implemente abaixo o estilo dos produtos adicionados
+#produtos {
+}
