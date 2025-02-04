@@ -1,14 +1,10 @@
 # aprenda-a-ser-dev
 
-# Crie um clone do projeto em sua máquina(acesse um local de sua preferência com uma pasta project)
+## Crie um clone do projeto em sua máquina
 
 ```sh
 git clone git@github.com:brunolandim/aprenda-a-ser-dev.git
 ```
-
-# Fullstack Learning Project
-
-# Fullstack Learning Project
 
 ## Descrição
 
