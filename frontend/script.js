@@ -1,6 +1,3 @@
-// Lista de produtos
-let produtos = [];
-
 // Função para chamar o endpoint de teste
 // Acesse o backend abra outro terminar e rode o script npm run dev para subir o servidor
 async function chamarTestEndpoint() {
@@ -18,6 +15,7 @@ async function chamarTestEndpoint() {
 
 // Função para adicionar um novo produto
 function adicionarProduto() {
+//sempre que criar um novo produto adicione o mesmo dentro da  <div id="produtos"></div>
 }
 
 // Função para atualizar a lista de produtos na tela
@@ -26,4 +24,5 @@ function atualizarLista() {
 
 // Função para remover um produto pelo índice
 function removerProduto(index) {
+  //sempre que remover um novo produto remova também da  <div id="produtos"></div>
 }
