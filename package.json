@@ -1,0 +1,15 @@
+{
+  "name": "aprenda-a-ser-dev",
+  "version": "1.0.0",
+  "description": "Este projeto guia iniciantes do básico ao avançado em desenvolvimento web, construindo um sistema completo com frontend e backend.",
+  "private": true,
+  "scripts": {
+    "installAllDependencies": "npm install --prefix frontend && npm install --prefix backend",
+    "start": "npm run dev:backend & npm run dev:frontend",
+    "dev:backend": "npm run dev --prefix backend",
+    "dev:frontend": "npm run dev --prefix frontend",
+    "test": "npm test --prefix backend && npm test --prefix frontend"
+  },
+  "author": "",
+  "license": "ISC"
+}

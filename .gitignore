@@ -1,0 +1,6 @@
+# Ignorar node_modules do frontend e backend
+frontend/node_modules/
+backend/node_modules/
+
+# Alternativamente, ignorar todos os node_modules do projeto
+node_modules/
