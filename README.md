@@ -57,13 +57,11 @@ fullstack-learning/
 
 ### **Instalar dependências**
 ```sh
-cd frontend && npm install
 cd backend && npm install
 ```
 
 ### **Rodar o projeto**
 ```sh
-cd frontend && npm start
 cd backend && node server.js
 ```
 
