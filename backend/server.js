@@ -1,5 +1,6 @@
 // Importando o módulo express (nosso herói para criar servidores web)
 import express from 'express';
+import cors from 'cors'
 
 // Criando uma instância do express (tipo ligar o motor do carro)
 const app = express();
@@ -9,6 +10,9 @@ const PORT = 3000;
 
 // Middleware para entender JSON nas requisições (tipo um tradutor de JSON)
 app.use(express.json());
+
+// 🚀 Habilitando o CORS para permitir requisições de outros domínios
+app.use(cors());
 
 // 🚀 As rotas são acessadas via http://localhost:3000/
 

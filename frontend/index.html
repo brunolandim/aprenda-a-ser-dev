@@ -9,6 +9,8 @@
   </head>
   <body>
     <h1>Criar Novo Produto</h1>
+    <button type="button" onclick="chamarTestEndpoint()">Endpoint de teste</button>
+
     <form id="form-produto">
       <div class="container">
         <label for="nome">Nome do Produto:</label>
@@ -20,7 +22,7 @@
         <input type="text" id="descricao" name="descricao" required />
       </div>
 
-      <button type="submit">Criar Produto</button>
+      <button type="button" onclick="adicionarProduto()">Criar Produto</button>
     </form>
     <hr />
     <h2>Lista de Produtos</h2>
